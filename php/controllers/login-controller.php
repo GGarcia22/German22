@@ -17,11 +17,11 @@ var_dump($usuario);
 if($usuario && $usuario->password == $_POST['password']){
      $_SESSION['auth']=true;
      $_SESSION['id']=$usuario->id;
-     header('location: /davinci/ProduccionWeb/TP2/index.php');
+     header('location: /TP2/home.php');
 }else{
     $_SESSION['message']=[
         'type'=> 'danger',
         'text'=> 'El usuario o la contraseña son incorrectas'
     ];
-    header('location: /davinci/ProduccionWeb/TP2/acceso.php');
+    header('location: /TP2/acceso.php');
 }

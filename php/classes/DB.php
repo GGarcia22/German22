@@ -10,6 +10,8 @@ class DB
         try {
 
             $db = new PDO('mysql:dbname=clubes_escocia;host=localhost', 'root', '');
+            $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            
         } catch (PDOException $e) {
 
             echo $e->getMessage();

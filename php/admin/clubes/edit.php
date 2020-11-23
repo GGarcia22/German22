@@ -15,7 +15,7 @@ require __DIR__ . '/../../controllers/clubes/clubID.php';?>
     <div class="container py-5">
         <div class="row">
             <div class="col-md-12">
-                <form action="../../controllers/update-controller.php" method="GET">
+                <form action="../../controllers/update-controller.php" method="POST">
                     <div class="form-group">
                         <label for="nombre">Nombre</label>
                         <input type="text" class="form-control" id="nombre" name="nombre" value="<?php echo $club->nombre ?>">
@@ -27,7 +27,8 @@ require __DIR__ . '/../../controllers/clubes/clubID.php';?>
                     <div class="form-group">
                         <button type="submit" class="btn btn-primary">Enviar</button>
                     </div>
-                    <input type="hidden" name="id_club" value="<?php echo $club->id; ?>">
+                    <input type="hidden" name="id" value="<?php echo $club->id; ?>">
+                    
                 </form>
             </div>
         </div>

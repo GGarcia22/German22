@@ -37,12 +37,15 @@ require __DIR__ . '/../../../php/controllers/clubes/clubName.php';
                                 <td><?php echo $club->nombre; ?></td>
                                 <td>
                                     <a href="edit.php?id=<?php echo $club->id; ?>" class="btn btn-primary"><span class="fa fa-edit"></span></a>
-                                    <a href="delete.php?id<?php echo $club->id; ?>" class="btn btn-danger"><span class="fa fa-trash"></span></a>
+                                    <a href="delete.php?id=<?php echo $club->id; ?>" class="btn btn-danger"><span class="fa fa-trash"></span></a>
                                 </td>
                             </tr>
                         <?php endforeach; ?>
                     </tbody>
                 </table>
+                <div class="form-group">
+                        <a class="btn btn-primary" href="/TP2/php/admin/clubes/upload.php">Agregar Club</a>
+                    </div>
             </div>
         </div>
     </div>

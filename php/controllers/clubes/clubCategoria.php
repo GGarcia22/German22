@@ -6,4 +6,4 @@ require __DIR__ .'/../../models/Model.php';
 
 
 $model = new Model;
-$club=$model->find($_GET['id']);
+$categorias=$model->findCateg();
